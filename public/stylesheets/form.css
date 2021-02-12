@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sarabun:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Great Vibes", cursive;
+  background:  linear-gradient(to top,#4d3437, #cbaeae);
+}
+.container{
+    background-color: white;
+    margin: 3rem auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    border-radius: 2%;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #cbaeae;
+}
+.container div {
+    width: 40%;
+    height: auto;
+    margin-left: .8rem;
+    
+}
+.image-blur{
+    border: 5px solid white;
+    box-shadow: 5px 10px 10px 1px #888888;
+}
+.container div img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(60%);
+}
+.container div h1{
+    font-size: 4rem;
+    color: #f3c4c4;
+}
+.container > div{
+    width: 60%;
+}
+.form {
+    /* border: 1px solid red; */
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input{
+    margin: 2rem 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(249, 252, 255);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: .7rem;
+}
+#btn{
+    width: 50%;
+    margin: 4rem auto;
+    background-color: #4d3437;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", cursive;
+    box-shadow: 1px 1px 1px 2px #745155;
+}
+#btn:hover{
+    background-color: #5a4346;
+}
+::placeholder { 
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #f3c4c4;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { 
+    /* Internet Explorer 10-11 */
+    color: #f3c4c4;
+  }
+  
+  ::-ms-input-placeholder { 
+    /* Microsoft Edge */
+    color: #f3c4c4;
+  }
+  p{
+    text-align: center;
+    font-size: 1.3rem;
+  }

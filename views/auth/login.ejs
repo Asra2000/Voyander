@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+<title>Login Page</title>
+<link rel="stylesheet" href="/stylesheets/form.css">
+</head>
+<body>
+    
+    <% if(fail){ %>
+        <h3>Looks like you need to login first.</h3>
+    <% } %> 
+<div class="container">
+    <div class="image-blur">
+        <img src="/Images/img.jpg" alt="">
+    </div>
+    <div>
+        <h1>Login</h1>
+        <form class="form" action="/login" method="POST">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="Login" id="btn">
+        </form>
+        <p>New user <a href="/register">Sign Up</a></p>
+        
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+/* /////////////////////////nav bar ///////////////// */
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 1rem auto;
+    display: flex;
+    z-index: 4;
+    font-size: 1.2rem;
+    font-family: "Sarabun", sans-serif;
+    letter-spacing: .3rem;
+    justify-content: space-around;
+  }
+  nav  section span{
+    margin: 1.5rem;
+  }
+  nav  section span a{
+    text-decoration: none;
+    color: #cbaeae;
+  }
+  nav  section span a:hover{
+    cursor: pointer;
+    color: #5b0c14;
+  }

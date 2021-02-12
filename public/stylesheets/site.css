@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sarabun:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}   
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Great Vibes", cursive;
+}
+.header {
+  position: relative;
+  overflow: hidden;
+}
+.header img {
+  position: relative;
+  object-fit: cover;
+}
+.header #overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+.header #heading {
+  position: absolute;
+  top: 20%;
+  margin: 0px auto;
+  color: #ffbf00;
+  font-size: 12rem;
+  font-weight: 400;
+  z-index: 2;
+}
+
+svg{
+    position: absolute;
+    z-index: 1;
+}
+
+/* /////////////////////////////////////// */
+.container{
+  margin: 0px 10%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+}
+.container > div:nth-child(odd) {
+  align-self: flex-end;
+}
+.place{
+
+  position: relative;
+  width: auto;
+  margin-top: 15rem;
+}
+.place h3{
+  color: #f7880125;
+  position: absolute;
+  top: -10rem;
+  left: -6rem;
+  font-size: 16rem;
+  font-weight: 500;
+  letter-spacing: .6rem;
+}
+.place img{
+  width: 50%;
+  height: auto;
+}
+.place h4{
+  color: #ae8383;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: .4rem;
+  /* text-align: center; */
+  text-transform: capitalize;
+}
+.place h4 a{
+  text-decoration: none;
+  color: inherit;
+}
+/* //////////////////////////////////////////// */
+.footer{
+  margin-top: 12rem;
+  width: 100%;
+  height: 20%;
+}
+.footer a{
+  color: #ae8383;
+}
+
+/* ///////////////////page 3////////////////////////// */
+.container1{
+  margin: 0 auto;
+  width: 100%;
+}
+.container1 #heading1{
+  font-size: 10rem;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  color: #684148;
+}
+.frame{
+  width: 100%;
+}
+.frame h2{
+  width: 60%;
+  font-size: 2.3rem;
+  margin: 5rem auto;
+  color: #ae8383;
+  text-decoration: underline;
+  font-weight: 200;
+  letter-spacing: .5rem;
+}
+.ticket{
+  color: #ab7e7e;
+  width: 60%;
+  padding: 3rem;
+  font-size: 1.3rem;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid  #ffbf00;
+}
+.ticket .flightInfo> h5{
+  color: #e4915e;
+  letter-spacing: .16rem;
+  padding-top: 5px;
+}
+.ticket h3{
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 300;
+}
+.ticket a > span{
+  font-size: 2.5rem;
+  padding: 1rem;
+  height: auto;
+  color: #ffbf00;
+}
+.ticket a{
+  text-decoration: none;
+}

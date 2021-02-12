@@ -1,0 +1,14 @@
+<nav>
+    <section>
+        <span class="item"><a href="/">Home</a></span>
+        <span class="item"><a href="/sites">Sites</a></span>
+    </section>
+    <section>
+        <% if(!currentUser){ %>
+        <span class="item"><a href="/login">Login</a></span>
+        <span class="item"><a href="/register">Register</a></span>
+        <% }else{ %> 
+        <span class="item"><a href="/logout">Logout</a></span>
+        <% } %> 
+    </section>
+</nav>

@@ -1,0 +1,72 @@
+<% include("./partials/header") %> 
+    <title>Hotels Page</title>
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/hotel.css">
+</head>
+<body>
+    <div class="top-section">
+        <img src="/Images/hotel/head1.jpg" id="head1" alt="">
+        <img src="/Images/hotel/head2.jpg" id="head2" alt="">
+        <div class="heading">
+            <span>Luxury</span>
+            <span>awaits <span class="small">where</span></span>
+            <span class="small">are</span>
+            <span id="you">YOU</span>
+        </div>
+    </div>
+
+    <div class="sections">
+        <img src="/Images/hotel/hotel1.jpg" class="image" alt="">
+        <img src="/Images/hotel/hotel2.jpg" class="image" alt="">
+        <img src="/Images/hotel/hotel3.jpg" class="image" alt="">
+
+        <section class="names">
+            <div><p>Palm Paradise</p></div>
+            <div><p>Elite Residence</p></div>
+            <div><p>Marriott</p></div>
+        </section>
+    </div>
+
+    <div class="sections">
+        <div class="blank"></div>
+        <img src="/Images/hotel/hotel5.jpg" class="image" alt="">
+        <img src="/Images/hotel/hotel4.jpg" class="image" alt="">
+
+        <section class="names">
+            <div><p></p></div>
+            <div><p>Clarks Inn</p></div>
+            <div><p>Mandarin Oriental</p></div>
+        </section>
+    </div>
+
+    <div class="sections">
+        <img src="/Images/hotel/hotel7.jpg" class="image" alt="">
+        <div class="blank"></div>
+        <div class="blank"></div>
+
+        <section class="names">
+            <div><p>Hyatt</p></div>
+            <div><p></p></div>
+            <div><p></p></div>
+        </section>
+
+    </div>
+
+    <script>
+        var images = document.getElementsByClassName("image");
+        for(var i = 0; i < images.length; i++) {
+            var image = images[i];
+            image.onclick = function(event) {
+                var index = 0;
+                for(var i = 0; i < images.length; i++){
+                    if(images[i] == this){index = i; break;}
+                }
+                 window.location.href = '/hotel/'+ index;
+            };
+        }
+
+    
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<%- include("../partials/header") %>
+<title>Sign Up Page</title>
+<link rel="stylesheet" href="/stylesheets/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-blur">
+            <img src="/Images/img1.jpg" alt="">
+        </div>
+        <div>
+            <h1>Sign Up</h1>
+
+            <form  class="form" action="/register" method="POST">
+                <input type="text" name="username" placeholder="name">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" value="Sign Up" id="btn">
+            </form>
+        <p>Already a user <a href="/login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<%- include("../partials/footer") %>

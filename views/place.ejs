@@ -1,0 +1,40 @@
+<% include("./partials/header") %> 
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/places.css">
+
+</head>
+
+<body>
+    <%- include('./partials/navbar') %>
+
+    <div class="container">
+        <img src="/Images/<%= image %> " alt="">
+        <h1><%= name %></h1>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse impedit, quasi delectus harum rerum possimus neque facere eveniet quidem placeat inventore enim nostrum consequuntur dolores doloremque a quos vero ipsum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem dolorum amet nesciunt dolore harum natus odit, dolorem eos, aut at quo error ducimus, voluptas beatae. Harum facere ratione quas.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam totam, officia doloremque doloribus obcaecati nulla. Quam odio doloremque excepturi ipsum eum animi rerum, dolores debitis ad iste, asperiores, repellat consequatur!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse impedit, quasi delectus harum rerum possimus neque facere eveniet quidem placeat inventore enim nostrum consequuntur dolores doloremque a quos vero ipsum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse impedit, quasi delectus harum rerum possimus neque facere eveniet quidem placeat inventore enim nostrum consequuntur dolores doloremque a quos vero ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem dolorum amet nesciunt dolore harum natus odit, dolorem eos, aut at quo error ducimus, voluptas beatae. Harum facere ratione quas.
+        </p>
+        </div>
+    
+        <div class="mapouter">
+            <h1>Get Directions</h1>
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src=<%= src %> frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://embedgooglemap.net/maps/29"></a>
+                <br>
+                <!-- <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style> -->
+                <a href="https://www.embedgooglemap.net">google maps html</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+                </style>
+            </div>
+        </div>
+</body>
+</html>

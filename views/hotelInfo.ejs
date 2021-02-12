@@ -1,0 +1,60 @@
+<% include("./partials/header") %> 
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/hotelInfo.css">
+
+</head>
+
+<body>
+    <%- include('./partials/navbar') %>
+    <div class="container">
+        <img src="<%= src %> " alt="">
+        <h1><%= name %></h1>
+    </div>
+    <div class="section1" >
+        <div class="info">
+            <h6>Room: <span id="roomType"><%= rooms[0].type %></span></h6>
+            <h6>Price: <span id="price">Rs. <span id="price1"><%= rooms[0].price %></span></span></h6>
+            <h6>Days: <span><input type="number" name="days" id="" value="0" onchange="daysChange()" min="0"></span></h6>
+            <hr>
+            <h6>Total= <span>Rs. <span id="total">0.0</span></span></h6>
+        </div>
+        <div class="room">
+            <img src=<%= rooms[0].src %> alt="" id="room">
+        </div>
+        <div class="next"><h1>></h1></div>
+    </div>
+    
+    <div class="button">
+        <a href="/hotel/1/0" id="book-link"><div>Book Now</div></a>
+    </div>
+
+
+    <!-- /////////////////////////////////////////////////////// -->
+    <script>
+        var total = document.getElementById("total");
+        var price = document.getElementById("price1");
+        var index  =0;
+        var roomObj = <%-JSON.stringify(rooms)%>; 
+
+
+        function incrementIndex() {
+            index = ( index+1) % 5;
+            document.getElementById("room").src = roomObj[index].src;
+            document.getElementById("price1").innerHTML= roomObj[index].price;
+            document.getElementById("roomType").innerHTML = roomObj[index].type;
+            document.getElementById("book-link").setAttribute("href", "/hotel/1/"+index);
+        }
+        
+        document.getElementsByClassName("next")[0].addEventListener('click', incrementIndex);
+
+        document.getElementsByName("days")[0].addEventListener('change', daysChange);
+
+        function daysChange(){
+            if(this.value != undefined){
+            total.textContent = parseFloat(price.textContent) * 1.0* this.value;
+            }
+        }
+    </script>
+</body>
+</html>
