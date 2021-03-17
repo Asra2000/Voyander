@@ -71,6 +71,7 @@ body {
     background-color: #4d3437;
     border-radius: 2rem;
     color: white;
+    text-align: center;
     font-size: 1.5rem;
     font-family: "Great Vibes", cursive;
     box-shadow: 1px 1px 1px 2px #745155;
@@ -96,4 +97,18 @@ body {
   p{
     text-align: center;
     font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 670px){
+    .form input{
+      padding: .4rem;
+      padding-right: 4rem;
+    }
+    .container div img, .image-blur{
+      display: none;
+    }
+    #btn{
+      width: 70%;
+      text-align: center;
+    }
   }

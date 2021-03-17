@@ -17,7 +17,6 @@ body {
 }
 .header {
   position: relative;
-  height: 600px;
   width: 100%;
   background-image: linear-gradient(to top, #5b0c14, white);
   /* overflow: hidden; */
@@ -177,3 +176,28 @@ body {
   left: 35%;
 }
 
+/* ///////////media query///////////////// */
+@media screen and (max-width: 1180px){
+  .header, .header h1{
+    height: 60%;
+    width: 100vw;
+    right: 10vw;
+  }
+  .header h1{
+    font-size: 20vw;
+  }
+  .header svg{
+    width: 100%;
+    height: 100%;
+    right: 10vw;
+  }
+  .container, .header img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px){
+  #img1{
+    top: -20vh;
+  }
+}
